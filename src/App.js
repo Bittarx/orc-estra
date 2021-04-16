@@ -1,8 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import Sobre_mim from './Sobre_mim';
 import Home from './Home';
-import {Route, Link} from "react-router-dom";
+import {Route} from "react-router-dom";
 import NavBar from "./NavBar";
 function App() {
   return  (
