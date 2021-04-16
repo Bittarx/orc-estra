@@ -1,23 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Sobre_mim from './Sobre_mim';
+import Home from './Home';
+import {Route, Link} from "react-router-dom";
+import NavBar from "./NavBar";
 function App() {
-  return (
+  return  (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="nome">Marcos Santos Bittar</div>
+      <div className="email">marcos.bittar@orcestra.com.br - (62) 986091171</div>
+      <NavBar />
+      <Route exact path="/" component={Home} />
+      <Route exact path="/Sobre_mim" component={Sobre_mim} />
     </div>
   );
 }
